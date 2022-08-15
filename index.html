@@ -1,0 +1,257 @@
+<!DOCTYPE html>   
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<link rel="icon" type="image/x-icon" href="img/logo.png">
+<title> contact Us </title> 
+<script src="https://kit.fontawesome.com/aae715a168.js" crossorigin="anonymous"></script> 
+<style>
+    body{
+        display: flex;
+        background-color: #0F3959;
+        background: url(img/background.jpg) fixed ;
+        /* background-position: center; */
+        object-fit:cover;
+        
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+    .container1{
+  width: 85%;
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.container1 .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container1 .content .left-side{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+.content .left-side::before{
+  content: '';
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #afafb6;
+}
+.content .left-side .details{
+  margin: 14px;
+  text-align: center;
+}
+.content .left-side .details i{
+  font-size: 30px;
+  color: #3e2093;
+  margin-bottom: 10px;
+}
+.content .left-side .details .topic{
+  font-size: 18px;
+  font-weight: 500;
+}
+.content .left-side .details .text-one,
+.content .left-side .details .text-two{
+  font-size: 14px;
+  color: #afafb6;
+}
+.container1 .content .right-side{
+  width: 75%;
+  margin-left: 75px;
+}
+.content .right-side .topic-text{
+  font-size: 23px;
+  font-weight: 600;
+  color: #3e2093;
+}
+.right-side .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #F0F1F8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+.right-side .message-box{
+  min-height: 110px;
+}
+.right-side .input-box textarea{
+  padding-top: 6px;
+}
+.right-side .button{
+  display: inline-block;
+  margin-top: 12px;
+}
+
+.right-side .button input[type="button"]{
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #3e2093;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button input[type="button"]:hover{
+  background: #5029bc;
+}
+
+@media (max-width: 950px) {
+  .container1{
+    width: 90%;
+    padding: 30px 40px 40px 35px ;
+  }
+  .container1 .content .right-side{
+   width: 75%;
+   margin-left: 55px;
+}
+}
+.submit-btn{
+  text-transform: capitalize;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.5rem 1.4rem;
+}
+.submit-btn:hover{
+  background-color:#0F3959;
+  color: whitesmoke;
+  transition: 0.2s ease-in-out;
+}
+@media (max-width: 820px) {
+  .container1{
+    margin: 40px 0;
+    height: 100%;
+  }
+  .container1 .content{
+    flex-direction: column-reverse;
+  }
+ .container1 .content .left-side{
+   width: 100%;
+   flex-direction: row;
+   margin-top: 40px;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+ .container .content .left-side::before{
+   display: none;
+ }
+ .container1 .content .right-side{
+   width: 100%;
+   margin-left: 0;
+ }
+}
+
+
+.page4 {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.mainfooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.topic-text{
+  font-family:'Times New Roman', Times, serif;
+  /* background-color: red; */
+  font-weight: bold !important;
+  color: rgb(61, 98, 138) !important;
+}
+.row11 {
+  display: flex;
+  width: 35%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 1.5rem;
+  /* flex grow width justify content */
+}
+.foot-first {
+  margin-left: 1.2rem;
+  width: 30%;
+  /* display: flex; */
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-right: 2rem;
+}
+</style>   
+</head>    
+<body>    
+    <section id="contact">
+        <div class="container1">
+          <div class="content">
+            <div class="left-side">
+              <div class="address details">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <div class="topic" style="margin-bottom: 7%;">Address</div>
+                <div class="text-one" style="color:#000!important">J-32 , Ram Nagar</div>
+                <div class="text-two" style="color:#000!important">Orai,India - 285001  </div>
+              </div>
+              <div class="phone details">
+                
+                <i class="fa-solid fa-map-location-dot"></i>
+                <div class="topic">Phone</div>
+                <a onclick="googleEvent('Career Helpline', 'Footer: Helpline',  'Homepage'
+            ,'');" href="tel:+916307924929" class="helpline" style="color:#000!important">
+            <i class="margin-right-5 " style="margin-right:5px"></i>+91 630 7924929</a>
+                <!-- <div class="text-one">+91 9398 5426</div>
+                <div class="text-two">+91 3112 6578</div> -->
+              </div>
+              <div class="email details">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <i class="fa-solid fa-envelopes"></i>
+                <div class="topic">Email</div>
+                <!-- <div class="text-one">takeAleap@gmail.com</div>
+                <div class="text-two"></div> -->
+                <a onclick="googleEvent('Hello Email', 'Footer',  'Homepage' ,'');" href="mailto:hello@mindler.com" style="color:#000!important">
+                  <i class="margin-right-5  font-size-11" style="margin-right:5px;"></i>Inquiry_@carrierGuide.ac.in
+                </a>
+              </div>
+            </div>
+            <div class="right-side">
+              <div class="topic-text">CONTACT US</div>
+              <p>Let's talk about Your carrier.Send us a message and we will we in touch with in our Bussiness day</p>
+              <form action="" method="post">
+                  <div class="input-box"  >
+                  <input type="text"  id="input-id-1"name="name" placeholder="Enter your Name">
+                  </div>
+                  <div class="input-box" id="input-id-2">
+                  <input type="text" name="email" placeholder="Enter your Email">
+                  </div>
+                  <div class="input-box message-box" id="input-id-3">
+                      <input type="text" name="message" placeholder="Enter Your Message">
+                  </div>
+                  <div class="button">
+                    <button type="submit" class=" submit-btn" >SEND </button>
+                  </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+</body>     
+</html>  
